@@ -2,10 +2,12 @@ package ch.renhor.hotel.services;
 
 import ch.renhor.hotel.models.Address;
 import ch.renhor.hotel.models.Hotel;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class HotelService {
     private List<Hotel> hotelList;
 
@@ -20,7 +22,7 @@ public class HotelService {
         hotel.setHomepage("www.victoria.ch");
         hotelList.add(hotel);
         final Hotel hilton = new Hotel();
-        hilton.setName("Grand Victoria");
+        hilton.setName("Grand Hilton");
         hilton.setAddress(new Address("Hilton", "101", "Venice Garden", "Basel Stadt", "4000", "Switzerland"));
         hilton.setHomepage("www.hilton.ch");
         hotelList.add(hilton);
